@@ -33,7 +33,8 @@ public class UserDao {
         }
         return userList;
     }
-    private void saveUserList(List<User> userList){
+
+    public void saveUserList(List<User> userList){
         try {
             File file = new File("Users.dat");
             FileOutputStream fos;
